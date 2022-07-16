@@ -51,6 +51,14 @@ body {
   overflow: hidden;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  outline: 2px solid tomato;
+}
+
 /* logo */
 
 .logo {
@@ -71,7 +79,33 @@ body {
 
 /* header */
 
+.header > .container {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav-list {
+  display: flex;
+  margin-left: 93px;
+  padding-left: 0;
+  margin: 0 0 0 93px;
+}
+
+.header-contacts-list {
+  display: flex;
+  padding-left: 0;
+  margin: 0 0 0 auto;
+}
+
+.header-nav-item:not(:first-child),
+.header-contacts-item:not(:first-child) {
+  margin-left: 50px;
+}
+
 .header-nav-link {
+  display: block;
+  padding: 32px 0;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -79,6 +113,9 @@ body {
 }
 
 .header-contacts-link {
+  display: block;
+  padding: 32px 0;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
