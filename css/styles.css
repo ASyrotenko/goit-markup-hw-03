@@ -33,6 +33,11 @@ ul {
   padding: 0;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 [class*='link'] {
   text-decoration: none;
 }
@@ -263,7 +268,6 @@ ul {
 
 .team-item {
   border-radius: 0 0 4px 4px;
-  line-height: 0;
   background-color: var(--bg-white-color);
 }
 
@@ -340,10 +344,11 @@ ul {
   flex-wrap: wrap;
   gap: 30px;
   margin-top: 50px;
+  justify-content: center;
 }
 
 .portfolio-projects-item {
-  line-height: 0;
+  flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
 .portfolio-projects-disc {
@@ -359,6 +364,7 @@ ul {
 }
 
 .portfolio-projects-text {
+  margin-top: 4px;
   font-size: 16px;
   line-height: 1.88;
 }
